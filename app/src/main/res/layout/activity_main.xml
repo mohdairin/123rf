@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:text="2"
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="performClick2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:text="3"
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn2"
+        android:onClick="performClick3"
+     />
+
+    <ImageView
+        android:id="@+id/imageV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <jp.co.cyberagent.android.gpuimage.GPUImageView
+        android:id="@+id/gpuimageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:gpuimage_show_loading="false"
+        app:gpuimage_surface_type="texture_view" /> <!-- surface_view or texture_view -->
+
+
+    <!--    <jp.co.cyberagent.android.gpuimage.GPUImageView-->
+<!--        android:id="@+id/gpuimageview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:gpuimage_show_loading="false"-->
+<!--        app:gpuimage_surface_type="surface_view" />-->
+
+</RelativeLayout >
