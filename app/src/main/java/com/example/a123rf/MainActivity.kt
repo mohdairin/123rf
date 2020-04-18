@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
             Thread {
                 val imageUri =   Uri.parse("android.resource://com.example.a123rf/drawable/download");
                 var gpuImage = GPUImage(this);
-                gpuImage.setGLSurfaceView(findViewById<GLSurfaceView>(R.id.gpuimageview))
+              //  gpuImage.setGLSurfaceView(findViewById<GLSurfaceView>(R.id.gpuimageview))
                 gpuImage.setImage(bitmap);
                 gpuImage.setFilter(GPUImageColorInvertFilter())
 
@@ -148,7 +148,7 @@ class MainActivity : AppCompatActivity() {
         // now bitmap holds the updated pixels
 
         // set bitmap as background to ImageView
-      //  imageV.background = BitmapDrawable(getResources(), bitmap)
+        imageV.background = BitmapDrawable(getResources(), bitmap)
     }
 
     fun performClick2(view: View) {
